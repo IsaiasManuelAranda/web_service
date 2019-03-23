@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 ape_mat = jsonObject.getString("ape_mat");
                 telefono = jsonObject.getString("telefono");
                 email = jsonObject.getString("email");
-                adapter.add(id_cliente + ":" + nombre + ":" + ape_pat + ":" + ape_mat + ":" + telefono + ":" + email);
+                adapter.add(id_cliente + ":" + nombre + "\n" + ape_pat + ":" + ape_mat + ":" + telefono + ":" + email);
             }catch (JSONException e){
                 e.printStackTrace();
             }
